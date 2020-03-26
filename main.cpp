@@ -47,7 +47,7 @@ void shift_l(int *p ,int n)
     for(int i = 0 ; i < n;i++)
     {
         if((w+i) < n){//把在移位数后面的元素映射到前面
-            p[i] = p[(w+i) % n]; }
+            p[i] = p[(w+i) % n]; }//左移比右移好写
         else {
             p[i] = p1[i-n+w];
         }
